@@ -33,24 +33,24 @@ function formHandle(data){
       <div className="lower_box">
         <form onSubmit={handleSubmit(formHandle)}>
           <div className="form_control">
-          <input type="text"  name='FirstName' placeholder='FirstName' {...register("FirstName")}/>
+          <input type="text"  name='FirstName' placeholder='FirstName' autoComplete='off' {...register("FirstName")}/>
           <p className='errors'>{errors.FirstName?.message}</p>
           </div>
           <div className="form_control">
-          <input type="text" name='LastName' placeholder='LastName'  {...register("LastName")} />
+          <input type="text" name='LastName' placeholder='LastName' autoComplete='off'  {...register("LastName")} />
           <p className='errors'>{errors.LastName?.message}</p>
           </div>
           <div className="form_control">
-          <input type="text" name='EmailAddress' placeholder="Email Address"  {...register("EmailAddress")} />
+          <input type="text" name='EmailAddress' placeholder="Email Address" autoComplete='off' {...register("EmailAddress")} />
           <p className='errors'>{errors.EmailAddress?.message}</p>
           </div>
           <div className="form_control">
-          <input type="password" name='Password' placeholder="Password"  {...register("Password")}/>
+          <input type="password" name='Password' placeholder="Password" autoComplete='off' {...register("Password")}/>
           <p className='errors'>{errors.Password?.message}</p>
           </div>
           <button type="submit" className='button'>CLAIM YOUR FREE TRAIL</button>
         </form>
-        <p className='footer'>By clicking the button you are aggreeing to our <span className="line2">Terms and Services</span></p>
+        <p className='footer'>By clicking the button you are agreeing to our <span className="line2">Terms and Services</span></p>
       </div>
      </div>
     </div>

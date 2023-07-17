@@ -1,10 +1,14 @@
-*{
-  margin: 0;
-  padding: 0;
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   user-select: none;
 }
+
 .App{
-  background: url(/bg-intro-desktop.png) hsl(0, 100%, 74%) ;
+  background: url(/bg-intro-desktop.png) hsl(0, 100%, 74%);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -33,13 +37,12 @@
   color: antiquewhite;
 }
 .left_container > p{
-  color: whitesmoke;
+  color: antiquewhite;
   opacity: 0.7;
 }
 .right_container{
   flex: 0.3;
   height: 30rem;
-  width: 8rem;
   display: flex;
   flex-direction: column;
 }
@@ -51,7 +54,6 @@
   align-items: center;
   justify-content: center;
   flex: 0 0 40px; 
-  
   color: whitesmoke;
 }
 .line{
@@ -126,25 +128,36 @@ form > button{
   .App{
     flex-direction: column;
     height: max-content;
-    gap: 10px;
+    overflow-x: auto;
   }
   .right_container{
     flex: 0.5;
-    width: 18rem;
-    margin-top: 20px;
+    width: 20rem;
+    padding-bottom: 20px;
+    
   }
   .upper_box{
-    flex: 0 0 40px;
+    flex: 0 0 50px;
     text-align: center;
+    padding: 5px;
+  }
+  .upper_box > p{
+    font-size: 14px;
+    
   }
   .lower_box{
-    flex: 0.7;
+    flex: 0.9;
   }
   .left_container{
     flex: 0.5;
-    width: 18rem;
-    margin-top: 20px;
+    width: 20rem;
     padding: 0;
+  }
+  .left_container > h1{
+    font-size: 40px;
+  }
+  .left_container > p{
+    margin-top: -30px;
   }
   .form_control{
     width: 100%;
@@ -152,6 +165,7 @@ form > button{
   input{
     border: none;
     width: 100%;
+    background-color: whitesmoke;
   }
   .errors{
     transform: translateX(16%);
